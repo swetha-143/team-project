@@ -1,0 +1,178 @@
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef, #f6d365);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav .logo img{
+    object-fit: contain;
+    max-width: 90px;
+    padding-top: 2px;
+}
+nav{
+    background-color: #c3bcbc;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between; 
+}
+nav .action{
+    display: flex;
+    margin: 10px 20px;
+}
+nav .action .home{
+    padding: 4px 14px;
+    cursor: pointer;
+    color: gray;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0 10px;
+}
+nav .action .home:hover{
+    color:#111;
+    transition: 0.8ms;
+}
+nav .action .aboutus{
+    padding: 4px 14px;
+    cursor: pointer;
+    color: gray;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0 10px;
+}
+nav .action .aboutus:hover{
+   color:#111;
+    transition: 0.8ms;
+}
+nav .action .contactus{
+    padding: 4px 14px;
+    cursor: pointer;
+    color: gray;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0 10px;
+}
+nav .action .contactus:hover{
+    color:#111;
+    transition: 0.8ms;
+}
+
+header {
+    text-align: center;
+    padding: 10px; /* Further reduced padding */
+    background-color: #4f77c7;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem; /* Further reduced font size */
+    margin: 0;
+}
+/* Video Section */
+.video video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Filter and Sort Section */
+.controls {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label, select {
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+
+/* Dress Section Styling */
+.dress-section {
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+h2 {
+    font-size: 2.5em;
+    color: #ea0caf;
+    margin-bottom: 20px;
+    text-align: center; /* Centering the h2 */
+    font-weight: 700;
+    margin-top: 0; /* Optional: Reduces top margin */
+}
+
+/* Colorful gradients for sections */
+.men-section {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.women-section {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.children-section {
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+}
+
+.dress-section:hover {
+    transform: scale(1.02);
+}
+
+/* Dress Grid Styling */
+.dress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.dress-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dress-item:hover {
+    transform: scale(1.05);
+}
+
+.dress-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dress-item h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+}
+
+.dress-item p {
+    font-size: 1.1rem;
+    margin-top: 8px;
+    color: #555;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

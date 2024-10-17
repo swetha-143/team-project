@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Catalogue</title>
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://firebasestorage.googleapis.com/v0/b/notaflix-e14eb.appspot.com/o/logo.png?alt=media&token=029b5fd7-46f4-4499-94e6-c4bf8966fc9b" alt="Logo">
+        </div>
+        <div class="action">
+            <a class="home">Home</a>
+            <a class="aboutus">About Us</a>
+            <a class="contactus">Contact Us</a>
+        </div>  
+    </nav>
+    <header>
+        <h1>Dress Catalogue</h1>
+    </header>
+    <div class="video">
+        <video src="https://firebasestorage.googleapis.com/v0/b/notaflix-e14eb.appspot.com/o/videoplayback.mp4?alt=media&token=273a4083-aa11-4b68-bbbe-bd045e1f4abf" autoplay muted loop></video>
+    </div>
+    <!-- Filter and Sort Section -->
+    <section class="controls">
+        <label for="gender-filter">Filter by Gender:</label>
+        <select id="gender-filter" onchange="filterDresses()">
+            <option value="all">All</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+            <option value="children">Children</option>
+        </select>
+
+        <label for="color-filter">Filter by Color:</label>
+        <select id="color-filter" onchange="filterDresses()">
+            <option value="all">All</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+        <label for="sort">Sort by:</label>
+        <select id="sort" onchange="sortDresses()">
+            <option value="name">Name</option>
+            <option value="price">Price</option>
+        </select>
+    </section>
+
+    <!-- Men's Section -->
+    <section class="dress-section men-section">
+        <h2>Men's Wear</h2>
+        <div class="dress-grid" id="men-grid">
+            <div class="dress-item" data-gender="men" data-color="blue" data-price="60">
+                <img src="men_dress1.jpg" alt="Men's Blue Shirt">
+                <h3>Men's Blue Shirt</h3>
+                <p>Formal shirt - $60</p>
+            </div>
+            <div class="dress-item" data-gender="men" data-color="red" data-price="55">
+                <img src="men_dress2.jpg" alt="Men's Red Jacket">
+                <h3>Men's Red Jacket</h3>
+                <p>Stylish red jacket - $55</p>
+            </div>
+            <div class="dress-item" data-gender="men" data-color="black" data-price="65">
+                <img src="men_dress3.jpg" alt="Men's Black Suit">
+                <h3>Men's Black Suit</h3>
+                <p>Elegant black suit - $65</p>
+            </div>
+            <div class="dress-item" data-gender="men" data-color="green" data-price="70">
+                <img src="men_dress4.jpg" alt="Men's Green T-shirt">
+                <h3>Men's Green T-shirt</h3>
+                <p>Casual green t-shirt - $70</p>
+            </div>
+            <div class="dress-item" data-gender="men" data-color="blue" data-price="60">
+                <img src="men_dress1.jpg" alt="Men's Blue Shirt">
+                <h3>Men's Blue Shirt</h3>
+                <p>Formal shirt - $60</p>
+            </div>
+            <div class="dress-item" data-gender="men" data-color="red" data-price="55">
+                <img src="men_dress2.jpg" alt="Men's Red Jacket">
+                <h3>Men's Red Jacket</h3>
+                <p>Stylish red jacket - $55</p>
+            </div>
+            <div class="dress-item" data-gender="men" data-color="black" data-price="65">
+                <img src="men_dress3.jpg" alt="Men's Black Suit">
+                <h3>Men's Black Suit</h3>
+                <p>Elegant black suit - $65</p>
+            </div>
+            <div class="dress-item" data-gender="men" data-color="green" data-price="70">
+                <img src="men_dress4.jpg" alt="Men's Green T-shirt">
+                <h3>Men's Green T-shirt</h3>
+                <p>Casual green t-shirt - $70</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women's Section -->
+    <section class="dress-section women-section">
+        <h2>Women's Wear</h2>
+        <div class="dress-grid" id="women-grid">
+            <div class="dress-item" data-gender="women" data-color="red" data-price="50">
+                <img src="women_dress1.jpg" alt="Red Dress">
+                <h3>Women's Red Dress</h3>
+                <p>Elegant red evening wear - $50</p>
+            </div>
+            <div class="dress-item" data-gender="women" data-color="blue" data-price="40">
+                <img src="women_dress2.jpg" alt="Blue Dress">
+                <h3>Women's Blue Dress</h3>
+                <p>Perfect for summer outings - $40</p>
+            </div>
+            <div class="dress-item" data-gender="women" data-color="yellow" data-price="55">
+                <img src="women_dress3.jpg" alt="Yellow Dress">
+                <h3>Women's Yellow Dress</h3>
+                <p>Casual yellow dress - $55</p>
+            </div>
+            <div class="dress-item" data-gender="women" data-color="green" data-price="60">
+                <img src="women_dress4.jpg" alt="Green Evening Gown">
+                <h3>Women's Green Gown</h3>
+                <p>Stunning green evening gown - $60</p>
+            </div>
+            <div class="dress-item" data-gender="women" data-color="red" data-price="50">
+                <img src="women_dress1.jpg" alt="Red Dress">
+                <h3>Women's Red Dress</h3>
+                <p>Elegant red evening wear - $50</p>
+            </div>
+            <div class="dress-item" data-gender="women" data-color="blue" data-price="40">
+                <img src="women_dress2.jpg" alt="Blue Dress">
+                <h3>Women's Blue Dress</h3>
+                <p>Perfect for summer outings - $40</p>
+            </div>
+            <div class="dress-item" data-gender="women" data-color="yellow" data-price="55">
+                <img src="women_dress3.jpg" alt="Yellow Dress">
+                <h3>Women's Yellow Dress</h3>
+                <p>Casual yellow dress - $55</p>
+            </div>
+            <div class="dress-item" data-gender="women" data-color="green" data-price="60">
+                <img src="women_dress4.jpg" alt="Green Evening Gown">
+                <h3>Women's Green Gown</h3>
+                <p>Stunning green evening gown - $60</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Children's Section -->
+    <section class="dress-section children-section">
+        <h2>Kid's Wear</h2>
+        <div class="dress-grid" id="children-grid">
+            <div class="dress-item" data-gender="children" data-color="green" data-price="30">
+                <img src="child_dress1.jpg" alt="Child's Green Dress">
+                <h3>Children's Green Dress</h3>
+                <p>Casual and cute - $30</p>
+            </div>
+            <div class="dress-item" data-gender="children" data-color="red" data-price="25">
+                <img src="child_dress2.jpg" alt="Child's Red Outfit">
+                <h3>Children's Red Outfit</h3>
+                <p>Fun and colorful - $25</p>
+            </div>
+            <div class="dress-item" data-gender="children" data-color="blue" data-price="35">
+                <img src="child_dress3.jpg" alt="Child's Blue Pajamas">
+                <h3>Children's Blue Pajamas</h3>
+                <p>Comfortable blue sleepwear - $35</p>
+            </div>
+            <div class="dress-item" data-gender="children" data-color="yellow" data-price="40">
+                <img src="child_dress4.jpg" alt="Child's Yellow Dress">
+                <h3>Children's Yellow Dress</h3>
+                <p>Bright and playful - $40</p>
+            </div>
+            <div class="dress-item" data-gender="children" data-color="green" data-price="30">
+                <img src="child_dress1.jpg" alt="Child's Green Dress">
+                <h3>Children's Green Dress</h3>
+                <p>Casual and cute - $30</p>
+            </div>
+            <div class="dress-item" data-gender="children" data-color="red" data-price="25">
+                <img src="child_dress2.jpg" alt="Child's Red Outfit">
+                <h3>Children's Red Outfit</h3>
+                <p>Fun and colorful - $25</p>
+            </div>
+            <div class="dress-item" data-gender="children" data-color="blue" data-price="35">
+                <img src="child_dress3.jpg" alt="Child's Blue Pajamas">
+                <h3>Children's Blue Pajamas</h3>
+                <p>Comfortable blue sleepwear - $35</p>
+            </div>
+            <div class="dress-item" data-gender="children" data-color="yellow" data-price="40">
+                <img src="child_dress4.jpg" alt="Child's Yellow Dress">
+                <h3>Children's Yellow Dress</h3>
+                <p>Bright and playful - $40</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function filterDresses() {
+    const genderFilterValue = document.getElementById("gender-filter").value;
+    const colorFilterValue = document.getElementById("color-filter").value;
+    const dresses = document.querySelectorAll(".dress-item");
+
+    dresses.forEach(dress => {
+        const dressGender = dress.getAttribute("data-gender");
+        const dressColor = dress.getAttribute("data-color");
+
+        const genderMatch = (genderFilterValue === "all" || dressGender === genderFilterValue);
+        const colorMatch = (colorFilterValue === "all" || dressColor === colorFilterValue);
+
+        if (genderMatch && colorMatch) {
+            dress.style.display = "block";
+        } else {
+            dress.style.display = "none";
+        }
+    });
+}
+
+function sortDresses() {
+    const sortValue = document.getElementById("sort").value;
+    const grids = [document.getElementById("men-grid"), document.getElementById("women-grid"), document.getElementById("children-grid")];
+    
+    grids.forEach(grid => {
+        const dresses = Array.from(grid.querySelectorAll(".dress-item"));
+
+        dresses.sort((a, b) => {
+            if (sortValue === "name") {
+                return a.querySelector("h3").innerText.localeCompare(b.querySelector("h3").innerText);
+            } else if (sortValue === "price") {
+                return a.getAttribute("data-price") - b.getAttribute("data-price");
+            }
+        });
+
+        dresses.forEach(dress => grid.appendChild(dress));
+    });
+}
+    </script>
+    <footer>
+        <p>&copy; Trendy Treasures </p>   
+        <p>Fashion For All</p>     
+      </footer>
+</body>
+</html>
